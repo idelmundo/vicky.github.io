@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>vmai88</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="gallery.css"/>
+
+</head>
+    <!-- ============================================ -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>Floralsbythuy</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/gallery.html" class="navbar__links">Gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__btn"><a href="/" class="button">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ============================================ -->
+    <!--                  Gallery                     -->
+<!--PHOTOS CONTAINER -->
+<body>
+<h1>Image Gallery</h1>
+<div class="gallery"onclick="openLightbox(event)">
+<img src="img/AT4.JPG"alt="Image 1">
+<img src="img/image2.jpeg"alt="Image 2">
+<img src="img/JJ4.JPG"alt="Image 3">
+<img src="img/Kristine.JPG"alt="Image 4">
+</div>
+<!-- Lightbox container -->
+<div id="lightbox">
+<!-- Close button -->
+<span id="close-btn" onclick="closeLightbox()">&times;</span>
+  
+<!-- Main lightbox image -->
+<img id="lightbox-img" src="" alt="lightbox image">
+  
+<!-- Thumbnails container -->
+<div id="thumbnail-container">
+<!-- Thumbnails will be added dynamically using JavaScript -->
+</div>
+  
+<!-- Previous and Next buttons -->
+<button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+<button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+</div>
+<script src="/gallery.js"></script>
+</body>
+</html>
