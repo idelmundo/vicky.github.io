@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
 <title>vmai88</title>
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="gallery.css"/>
+<script src="/gallery.js"></script>
 
 </head>
     <!-- ============================================ -->
@@ -30,34 +32,45 @@
         </ul>
       </div>
     </nav>
+ 
     <!-- ============================================ -->
     <!--                  Gallery                     -->
 <!--PHOTOS CONTAINER -->
 <body>
-<h1>Image Gallery</h1>
-<div class="gallery"onclick="openLightbox(event)">
-<img src="img/AT4.JPG"alt="Image 1">
-<img src="img/image2.jpeg"alt="Image 2">
-<img src="img/JJ4.JPG"alt="Image 3">
-<img src="img/Kristine.JPG"alt="Image 4">
+  <div class="main">
+    <h1>Flower Gallery</h1>
+    <div class="gallery">
+        <div class="gallery__item">
+            <img src="img/AT9.JPG" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/AT.JPG" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/AT2.JPG" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/AT3.JPG" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/AT5.JPG" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/AT6.JPG" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/image2.jpeg" />
+        </div>
+        <div class="gallery__item">
+            <img src="img/kim.JPG" />
+        </div>
+         <div class="gallery__item">
+            <img src="img/kim2.JPG" />
+        </div>
+        <div class="gallery__item">
+          <img src="img/kim3.JPG" />
+      </div>
+    </div>
 </div>
-<!-- Lightbox container -->
-<div id="lightbox">
-<!-- Close button -->
-<span id="close-btn" onclick="closeLightbox()">&times;</span>
-  
-<!-- Main lightbox image -->
-<img id="lightbox-img" src="" alt="lightbox image">
-  
-<!-- Thumbnails container -->
-<div id="thumbnail-container">
-<!-- Thumbnails will be added dynamically using JavaScript -->
-</div>
-  
-<!-- Previous and Next buttons -->
-<button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
-<button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
-</div>
-<script src="/gallery.js"></script>
 </body>
 </html>

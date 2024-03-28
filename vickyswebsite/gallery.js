@@ -1,76 +1,69 @@
-let currentIndex = 0;
-const images = document.querySelectorAll('.gallery img');
-const totalImages = images.length;
+const images = document.querySelectorAll(".gallery__item img");
+let imgIndex
+let imgSrc;
 
-// Open the lightbox
-function openLightbox(event) {
-    if (event.target.tagName === 'IMG') {
-        const clickedIndex = Array.from(images).indexOf(event.target);
-        currentIndex = clickedIndex;
-        updateLightboxImage();
-        document.getElementById('lightbox').style.display = 'flex';
-    }
-}
-
-// Close the lightbox
-function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-}
-
-// Change the lightbox image based on direction (1 for next, -1 for prev)
-function changeImage(direction) {
-    currentIndex += direction;
-    if (currentIndex >= totalImages) {
-        currentIndex = 0;
-    } else if (currentIndex < 0) {
-        currentIndex = totalImages - 1;
-    }
-    updateLightboxImage();
-}
-
-// Update the lightbox image and thumbnails
-function updateLightboxImage() {
-    const lightboxImg = document.getElementById('lightbox-img');
-    const thumbnailContainer = document.getElementById('thumbnail-container');
-
-    // Update the main lightbox image
-    lightboxImg.src = images[currentIndex].src;
-
-    // Clear existing thumbnails
-    thumbnailContainer.innerHTML = '';
-
-    // Add new thumbnails
-    images.forEach((image, index) => {
-        const thumbnail = document.createElement('img');
-        thumbnail.src = image.src;
-        thumbnail.alt = `Thumbnail ${index + 1}`;
-        thumbnail.classList.add('thumbnail');
-        thumbnail.addEventListener('click', () => updateMainImage(index));
-        thumbnailContainer.appendChild(thumbnail);
+// get images src onclick
+images.forEach((img, i) => {
+    img.addEventListener("click", (e) => {
+        imgSrc = e.target.src;
+        //run modal function
+        imgModal(imgSrc);
+        //index of the next image
+        imgIndex = i;
     });
-
-    // Highlight the current thumbnail
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails[currentIndex].classList.add('active-thumbnail');
-}
-
-// Update the main lightbox image when a thumbnail is clicked
-function updateMainImage(index) {
-    currentIndex = index;
-    updateLightboxImage();
-}
-
-// Add initial thumbnails
-updateLightboxImage();
-
-
-// To add keyboard navigation (left/right arrow keys)
-document.addEventListener('keydown', function (e) {
-    if (document.getElementById('lightbox').style.display === 'flex') {
-        if (e.key === 'ArrowLeft') {
-            changeImage(-1);
-        } else if (e.key === 'ArrowRight') {
-            changeImage(1);
-        }
-    }
 });
+
+//creating the modal
+let imgModal = (src) => {
+    const modal = document.createElement("div");
+    modal.setAttribute("class", "modal");
+    //add modal to the parent element 
+    document.querySelector(".main").append(modal);
+    //adding image to modal
+    const newImage = document.createElement("img");
+    newImage.setAttribute("src", src);
+    //creating the close button
+    const closeBtn = document.createElement("i");
+    closeBtn.setAttribute("class", "fas fa-times closeBtn");
+    //close function
+    closeBtn.onclick = () => {
+        modal.remove();
+    };
+    //next and previous buttons
+    const nextBtn = document.createElement("i");
+    nextBtn.setAttribute("class", "fas fa-angle-right nextBtn");
+    // change the src of current image to the src of next image
+    nextBtn.onclick = () => {
+        newImage.setAttribute("src", nextImg())
+    };
+    const prevBtn = document.createElement("i");
+    prevBtn.setAttribute("class", "fas fa-angle-left prevBtn");
+    // change the src of current image to the src of pevious image
+    prevBtn.onclick = () => {
+        newImage.setAttribute("src", prevImg())
+    }
+    modal.append(newImage, closeBtn, nextBtn, prevBtn);
+};
+
+//next image function
+let nextImg = () => {
+    imgIndex++;
+    //check if it is the the last image
+    if (imgIndex >= images.length) {
+        imgIndex = 0
+    }
+    //return src of the new image
+    return images[imgIndex].src;
+};
+
+//previous image function
+let prevImg = () => {
+    imgIndex--;
+    console.log(imgIndex);
+    //check if it is the first image
+    if (imgIndex < 0) {
+        imgIndex = images.length - 1
+    }
+    //return src of previous image
+    return images[imgIndex].src
+}
