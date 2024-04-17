@@ -1,23 +1,26 @@
-const form = document.querySelector("#userinfo");
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+	event.preventDefault(); // Prevent the default form submission
 
-async function sendData() {
-    // Associate the FormData object with the form element
-    const formData = new FormData(form);
+	// Collect form data
+	const formData = new FormData(this);
 
-    try {
-        const response = await fetch("https://google.com/post", {
-            method: "POST",
-            // Set the FormData instance as the request body
-            body: formData,
-        });
-        console.log(await response.json());
-    } catch (e) {
-        console.error(e);
-    }
-}
-
-// Take over form submission
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    sendData();
+	// Send form data to Formspree
+	fetch('https://formspree.io/f/myyrlyjg', {
+		method: 'POST',
+		body: formData,
+		headers: {
+			'Accept': 'application/json'
+		}
+	})
+		.then(response => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			alert('Form submitted successfully!');
+			// You can redirect or do any other action upon successful submission
+		})
+		.catch(error => {
+			console.error('There was a problem with your fetch operation:', error);
+			alert('There was a problem submitting the form. Please try again later.');
+		});
 });

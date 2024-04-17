@@ -1,18 +1,192 @@
-<form method=POST action="mailto:naomikudren@gmail.com" enctype="text/plain">
+<!DOCTYPE html>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-    Company<br>
-    <input type="text" name="companyname"><br>
-    Contact Person<br>
-    <input type="text" name="contactname"><br>
-    Phone number<br>
-    <input type="tel" name="phonenumber" min="6" max="15"><br>
-    Email<br>
-    <input type="email" name="email"><br>
-    
-    Message<br>
-    <input type="textarea" name="message" style='white-space:pre-wrap; height:200px;width:500px;'><br>
-    
-    
-    <input type="submit" value="Submit">
-    
-    </form>
+  * {
+    box-sizing: border-box;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  label {
+    color: black
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+</style>
+
+<body>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vmai88</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="gallery.css" /> -->
+    <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fa-solid fa-rose"></i>Floralsbythuy</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/gallery.html" class="navbar__links">Gallery</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/contactme.html" class="navbar__links">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section_Contact_form -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <div class="container">
+          <h1>Contact Info</h1>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="E-mail">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="event">Event type & Location:</label>
+              <input type="text" id="event" name="event" required>
+            </div>
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="text" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget:</label>
+              <input type="text" id="budget" name="budget" required>
+            </div>
+            <div class="form-group">
+              <label for="floral-needs">Floral Needs:</label>
+              <textarea id="floral-needs" name="floral_needs" rows="2" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      <div class="main__img--container">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/AT5.JPG" style="width:60%">
+            <div class="text">Christine Ngoc Nguyen</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/JennieJason.JPG" style="width:60%">
+            <div class="text">Courtney Yee Photography</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/MElissa.JPG" style="width:60%">
+            <div class="text">Holly D Photos<picture></picture>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/TIFFcityhall.JPG" style="width:60%">
+            <div class="text">Courtney Yee Photography<picture></picture>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/AT9.JPG" style="width:60%">
+            <div class="text">Nelli Nguyen Photography<picture></picture>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/KKdog.JPG" style="width:60%">
+            <div class="text">Christine Ngoc Nguyen <picture></picture>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items"></div>
+        <div class="footer__link--items">
+          <h2><a href="/">Home</a></h2>
+          <h2><a href="/gallery.html">Gallery</a></h2>
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <p class="website__rights">© Floralbythuy 2024. All rights reserved</p>
+        <div class="social__icons">
+          <a class="social__icon--link" href="https://www.instagram.com/floralsbythuy/" target="_blank"
+            aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>
