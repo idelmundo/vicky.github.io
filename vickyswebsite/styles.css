@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Times';
 }
 
 .navbar {
@@ -224,7 +224,7 @@
     width: 100%;
 }
 
-/* this is the main content for your name or title floralbythuy*/
+/* this is the main content for your name or title floralsbythuy*/
 .main__content h1 {
     font-size: 4rem;
     background-color: #d2abab;
@@ -236,7 +236,7 @@
     -moz-text-fill-color: transparent;
 }
 
-/* this is for "flower arrangment" */
+/* this is for "flower arrangement" */
 .main__content h2 {
     font-size: 4rem;
     margin-top: 10px;

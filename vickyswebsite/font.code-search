@@ -1,0 +1,148 @@
+# Query: font
+# ContextLines: 1
+
+38 results - 6 files
+
+contactme.html:
+   3    body {
+   4:     font-family: 'Garamond';
+   5    }
+
+  56      <!-- <link rel="stylesheet" href="gallery.css" /> -->
+  57:     <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
+  58:     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  59    </head>
+
+flowershop.html:
+  6      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  7:     <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
+  8      <title>vmai88</title>
+
+gallery.css:
+  17      margin: 10px 0px 30px 0px;
+  18:     font-family: Garamond;
+  19      color: rgb(0, 0, 0);
+  20:     font-size: 50px;
+  21  }
+
+gallery.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  7:   <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
+  8    <title>vmai88</title>
+
+index.html:
+   9    <link rel="stylesheet" href="gallery.css">
+  10:   <script src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous" defer></script>
+  11:   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  12  </head>
+
+styles.css:
+    4      padding: 0;
+    5:     font-family: Times;
+    6  }
+
+   13      align-items: center;
+   14:     font-size: 1.2rem;
+   15      position: sticky;
+
+   44      text-decoration: none;
+   45:     font-size: 2rem;
+   46  }
+
+  136          height: 50vh;
+  137:         font-size: 1.6rem;
+  138      }
+
+  228  .main__content h1 {
+  229:     font-size: 4rem;
+  230      background-color: #d2abab;
+
+  240  .main__content h2 {
+  241:     font-size: 4rem;
+  242      margin-top: 10px;
+
+  253      margin-top: 1rem;
+  254:     font-size: 2rem;
+  255:     font-weight: 700;
+  256  }
+
+  258  .main__btn {
+  259:     font-size: 1rem;
+  260      background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+
+  330      .main__content h1 {
+  331:         font-size: 2.5rem;
+  332          margin-top: 2rem;
+
+  336          margin-top: 1rem;
+  337:         font-size: 1.5rem;
+  338      }
+
+  342      .main__content h1 {
+  343:         font-size: 2rem;
+  344          margin-top: 3rem;
+
+  347      .main__content h2 {
+  348:         font-size: 2rem;
+  349      }
+
+  352          margin-top: 2rem;
+  353:         font-size: 1.5rem;
+  354      }
+
+  386      margin-bottom: 5rem;
+  387:     font-size: 2.5rem;
+  388  }
+
+  442      left: 30px;
+  443:     font-size: 1rem;
+  444  }
+
+  461      .services h1 {
+  462:         font-size: 2rem;
+  463          margin-top: 12rem;
+
+  472      .services h1 {
+  473:         font-size: 1.2rem;
+  474      }
+
+  496      text-decoration: none;
+  497:     font-size: 2rem;
+  498  }
+
+  542      color: #fff;
+  543:     font-size: 24px;
+  544  }
+
+  572      text-decoration: none;
+  573:     font-size: 2rem;
+  574      display: flex;
+
+  630  body {
+  631:     font-family: Garamond;
+  632  }
+
+  651      color: #848B79;
+  652:     font-size: 15px;
+  653      padding: 8px 12px;
+
+  662      color: #848B79;
+  663:     font-size: 12px;
+  664      padding: 8px 12px;
+
+  702      .text {
+  703:         font-size: 11px
+  704      }
+
+  708  body {
+  709:     font-family: Times;
+  710      margin: 0;
+
+  781  .about_me {
+  782:     font-size: 12px;
+  783:     font-weight: 10;
+  784      margin-bottom: 10px;
+
+  793      flex-direction: row;
+  794:     font-size: 30px;
+  795      text-align: center;
