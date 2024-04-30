@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Robert Leuschke';
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar {
-    background: rgb(255, 255, 255);
+    background: rgb(141, 160, 132);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,8 +31,8 @@
 }
 
 #navbar__logo {
-    background-color: #000000;
-    background-image: linear-gradient(to top, #fc8383 0%, #67615f 100%);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -61,7 +61,7 @@
 }
 
 .navbar__links {
-    color: #000000;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,12 +94,12 @@
 }
 
 .button:hover {
-    background: #dc9a9a;
+    background: #010101;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #cb7979;
+    color: #000000;
     transition: all 0.3s ease;
 }
 
@@ -224,7 +224,7 @@
     width: 100%;
 }
 
-/* this is the main content for your name or title floralsbythuy*/
+/* this is the main content for your name or title floralbythuy*/
 .main__content h1 {
     font-size: 4rem;
     background-color: #d2abab;
@@ -236,9 +236,9 @@
     -moz-text-fill-color: transparent;
 }
 
-/* this is for "flower arrangement" */
+/* this is for "flower arrangment" */
 .main__content h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 10px;
     background-color: #ff8177;
     background-image: linear-gradient(-20deg, #000000 0%, #464c4a 100%);
@@ -257,7 +257,7 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, rgb(141, 160, 132) 0%, rgb(141, 160, 132) 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -273,7 +273,7 @@
 .main__btn a {
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -285,7 +285,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #91946d;
+    background: #000000;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -628,7 +628,7 @@ img {
 }
 
 body {
-    font-family: 'Robert Leusschke';
+    font-family: Verdana, sans-serif;
 }
 
 .mySlides {
@@ -706,7 +706,8 @@ img {
 
 /* about me pg */
 body {
-    font-family: Square Peg margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 html {
