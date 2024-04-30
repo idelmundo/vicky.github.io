@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times';
+    font-family: 'Robert Leuschke';
 }
 
 .navbar {
@@ -628,7 +628,7 @@ img {
 }
 
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Robert Leusschke';
 }
 
 .mySlides {
@@ -706,8 +706,7 @@ img {
 
 /* about me pg */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    font-family: Square Peg margin: 0;
 }
 
 html {

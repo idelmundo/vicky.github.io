@@ -1,17 +1,17 @@
-# Query: font
+# Query: gi
 # ContextLines: 1
 
-38 results - 6 files
+62 results - 8 files
 
 contactme.html:
-   3    body {
-   4:     font-family: 'Garamond';
-   5    }
+  18      box-sizing: border-box;
+  19:     margin-top: 6px;
+  20:     margin-bottom: 16px;
+  21      resize: vertical;
 
   56      <!-- <link rel="stylesheet" href="gallery.css" /> -->
   57:     <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
-  58:     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  59    </head>
+  58      <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
 flowershop.html:
   6      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,130 +19,217 @@ flowershop.html:
   8      <title>vmai88</title>
 
 gallery.css:
-  17      margin: 10px 0px 30px 0px;
-  18:     font-family: Garamond;
-  19      color: rgb(0, 0, 0);
-  20:     font-size: 50px;
-  21  }
+   2      padding: 0;
+   3:     margin: 0;
+   4      box-sizing: border-box;
+
+  16  h1 {
+  17:     margin: 10px 0px 30px 0px;
+  18      font-family: '', 'TimesCursive';
+
+  69      background-color: rgba(0, 0, 0, 0.733);
+  70:     margin-top: -1px;
+  71      animation: zoom 0.3s ease-in-out;
 
 gallery.html:
   6    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   7:   <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
   8    <title>vmai88</title>
 
+gallery.js:
+   1  const images = document.querySelectorAll(".gallery__item img");
+   2: let imgIndex
+   3  let imgSrc;
+
+  11          //index of the next image
+  12:         imgIndex = i;
+  13      });
+
+  49  let nextImg = () => {
+  50:     imgIndex++;
+  51      //check if it is the the last image
+  52:     if (imgIndex >= images.length) {
+  53:         imgIndex = 0
+  54      }
+  55      //return src of the new image
+  56:     return images[imgIndex].src;
+  57  };
+
+  60  let prevImg = () => {
+  61:     imgIndex--;
+  62:     console.log(imgIndex);
+  63      //check if it is the first image
+  64:     if (imgIndex < 0) {
+  65:         imgIndex = images.length - 1
+  66      }
+  67      //return src of previous image
+  68:     return images[imgIndex].src
+  69  }
+
 index.html:
-   9    <link rel="stylesheet" href="gallery.css">
-  10:   <script src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous" defer></script>
-  11:   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  12  </head>
+    9    <link rel="stylesheet" href="gallery.css">
+   10:   <script src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous" defer></script>
+   11    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  107          Hello! I’m Thuy, but you can also call me Vicky. Growing up, I often found myself immersed in the arts.
+  108:         From playing musical instruments, singing, drawing, and painting - it was my escape from the day to day.
+  109          During the pandemic, I began to return to art with a more tactile form in flowers. From making home arrangements
+  110          for self care
+  111:         to curating small gifts for friends, it renewed my love for doing something creative. With much love and
+  112          encouragement from
+
+package-lock.json:
+  12        "version": "2.11.8",
+  13:       "resolved": "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz",
+  14        "integrity": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==",
+
+  22        "version": "5.3.3",
+  23:       "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.3.tgz",
+  24        "integrity": "sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==",
+
+  26          {
+  27:           "type": "github",
+  28:           "url": "https://github.com/sponsors/twbs"
+  29          },
 
 styles.css:
+    2      box-sizing: border-box;
+    3:     margin: 0;
     4      padding: 0;
-    5:     font-family: Times;
-    6  }
 
-   13      align-items: center;
-   14:     font-size: 1.2rem;
-   15      position: sticky;
+   26      max-width: 1300px;
+   27:     margin-right: auto;
+   28:     margin-left: auto;
+   29      padding-right: 50px;
 
-   44      text-decoration: none;
-   45:     font-size: 2rem;
-   46  }
+   48  .fa-gem {
+   49:     margin-right: 0.5rem;
+   50  }
 
-  136          height: 50vh;
-  137:         font-size: 1.6rem;
-  138      }
+  119          grid-template-columns: auto;
+  120:         margin: 0;
+  121          width: 100%;
 
-  228  .main__content h1 {
-  229:     font-size: 4rem;
-  230      background-color: #d2abab;
+  146          height: 3px;
+  147:         margin: 5px auto;
+  148          transition: all 0.3s ease-in-out;
 
-  240  .main__content h2 {
-  241:     font-size: 4rem;
-  242      margin-top: 10px;
+  172          height: 80px;
+  173:         margin: 0;
+  174      }
 
-  253      margin-top: 1rem;
-  254:     font-size: 2rem;
-  255:     font-weight: 700;
-  256  }
+  210      justify-self: center;
+  211:     margin: 0 auto;
+  212      height: 90vh;
 
-  258  .main__btn {
-  259:     font-size: 1rem;
-  260      background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  241      font-size: 4rem;
+  242:     margin-top: 10px;
+  243      background-color: #ff8177;
 
-  330      .main__content h1 {
-  331:         font-size: 2.5rem;
-  332          margin-top: 2rem;
+  252  .main__content p {
+  253:     margin-top: 1rem;
+  254      font-size: 2rem;
 
-  336          margin-top: 1rem;
-  337:         font-size: 1.5rem;
-  338      }
+  264      color: #fff;
+  265:     margin-top: 2rem;
+  266      cursor: pointer;
 
-  342      .main__content h1 {
-  343:         font-size: 2rem;
-  344          margin-top: 3rem;
+  318          width: 100%;
+  319:         margin: 0 auto;
+  320          height: 90vh;
 
-  347      .main__content h2 {
-  348:         font-size: 2rem;
-  349      }
+  326          text-align: center;
+  327:         margin-bottom: 4rem;
+  328      }
 
-  352          margin-top: 2rem;
-  353:         font-size: 1.5rem;
-  354      }
+  331          font-size: 2.5rem;
+  332:         margin-top: 2rem;
+  333      }
 
-  386      margin-bottom: 5rem;
-  387:     font-size: 2.5rem;
-  388  }
+  335      .main__content p {
+  336:         margin-top: 1rem;
+  337          font-size: 1.5rem;
 
-  442      left: 30px;
-  443:     font-size: 1rem;
-  444  }
+  343          font-size: 2rem;
+  344:         margin-top: 3rem;
+  345      }
 
-  461      .services h1 {
-  462:         font-size: 2rem;
-  463          margin-top: 12rem;
+  351      .main__content p {
+  352:         margin-top: 2rem;
+  353          font-size: 1.5rem;
 
-  472      .services h1 {
-  473:         font-size: 1.2rem;
-  474      }
+  357          padding: 12px 36px;
+  358:         margin: 2.5rem 0;
+  359      }
 
-  496      text-decoration: none;
-  497:     font-size: 2rem;
-  498  }
+  385      -moz-text-fill-color: transparent;
+  386:     margin-bottom: 5rem;
+  387      font-size: 2.5rem;
 
-  542      color: #fff;
-  543:     font-size: 24px;
-  544  }
+  396  .services__card {
+  397:     margin: 1rem;
+  398      height: 525px;
 
-  572      text-decoration: none;
-  573:     font-size: 2rem;
-  574      display: flex;
+  462          font-size: 2rem;
+  463:         margin-top: 12rem;
+  464      }
 
-  630  body {
-  631:     font-family: Garamond;
-  632  }
+  514      align-items: flex-start;
+  515:     margin: 16px;
+  516      text-align: left;
 
-  651      color: #848B79;
-  652:     font-size: 15px;
-  653      padding: 8px 12px;
+  521  .footer__link--items h2 {
+  522:     margin-bottom: 16px;
+  523  }
 
-  662      color: #848B79;
-  663:     font-size: 12px;
-  664      padding: 8px 12px;
+  531      text-decoration: none;
+  532:     margin-bottom: 0.5rem;
+  533  }
 
-  702      .text {
-  703:         font-size: 11px
-  704      }
+  556      max-width: 1000px;
+  557:     margin: 40px auto 0 auto;
+  558  }
 
-  708  body {
-  709:     font-family: Times;
-  710      margin: 0;
+  569      justify-self: start;
+  570:     margin-left: 20px;
+  571      cursor: pointer;
 
-  781  .about_me {
-  782:     font-size: 12px;
-  783:     font-weight: 10;
-  784      margin-bottom: 10px;
+  575      align-items: center;
+  576:     margin-bottom: 16px;
+  577  }
 
-  793      flex-direction: row;
-  794:     font-size: 30px;
-  795      text-align: center;
+  588      #footer__logo {
+  589:         margin-bottom: 2rem;
+  590      }
+
+  592      .website__rights {
+  593:         margin-bottom: 2rem;
+  594      }
+
+  606      .footer__link--items {
+  607:         margin: 0;
+  608          padding: 10px;
+
+  645      position: relative;
+  646:     margin: auto;
+  647  }
+
+  672      width: 15px;
+  673:     margin: 0 2px;
+  674      background-color: #bbb;
+
+  709      font-family: Arial, Helvetica, sans-serif;
+  710:     margin: 0;
+  711  }
+
+  725      width: 33.3%;
+  726:     margin-bottom: 16px;
+  727      padding: 0 8px;
+
+  731      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  732:     margin: 8px;
+  733  }
+
+  783      font-weight: 10;
+  784:     margin-bottom: 10px;
+  785  }
