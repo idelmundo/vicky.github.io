@@ -7,11 +7,11 @@
 
 .navbar {
     background: rgb(141, 160, 132);
-    height: 80px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -20,7 +20,7 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 120px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
