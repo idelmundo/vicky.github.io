@@ -13,6 +13,22 @@
     padding: 20px 0px 60px 0px;
 }
 
+/* Styles for logo */
+#navbar__logo img {
+    max-width: 100%;
+    /* Ensure the logo image doesn't exceed its container's width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+    #navbar__logo {
+        text-align: left;
+        /* Center the logo on mobile */
+    }
+}
+
 h1 {
     margin: 10px 0px 30px 0px;
     font-family: '', 'Times';

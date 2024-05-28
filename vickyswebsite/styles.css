@@ -5,6 +5,23 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Styles for logo */
+#navbar__logo img {
+    max-width: 100%;
+    /* Ensure the logo image doesn't exceed its container's width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+    #navbar__logo {
+        text-align: center;
+        /* Center the logo on mobile */
+    }
+}
+
+
 .navbar {
     background: rgb(141, 160, 132);
     height: 120px;
@@ -57,7 +74,7 @@
 }
 
 .navbar__item {
-    height: 80px;
+    height: 120px;
 }
 
 .navbar__links {
