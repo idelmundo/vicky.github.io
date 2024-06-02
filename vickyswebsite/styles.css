@@ -796,10 +796,11 @@ html {
 }
 
 /* about me  */
-.about_me {
+.about-me {
     font-size: 12px;
     font-weight: 10;
-    margin-bottom: 10px;
+    margin: 10px;
+    font-family: sans-serif;
 }
 
 .gallery_ {
