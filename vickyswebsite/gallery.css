@@ -13,6 +13,17 @@
     padding: 20px 0px 60px 0px;
 }
 
+.container-fluid {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
 /* Styles for logo */
 #navbar__logo img {
     max-width: 100%;
