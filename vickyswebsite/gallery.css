@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.gallery_ img {
+    max-width: 100%;
+    height: auto;
+  }
 .main {
     width: 100%;
     flex-direction: column;

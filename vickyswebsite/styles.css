@@ -5,6 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.gallery_ img {
+    max-width: 100%;
+    height: auto;
+  }
 /* Styles for logo */
 #navbar__logo img {
     max-width: 100%;
