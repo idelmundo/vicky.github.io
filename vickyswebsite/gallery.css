@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .gallery_ img {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
   }
 .main {
