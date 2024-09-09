@@ -16,20 +16,21 @@
   <!-- Navbar Section -->
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo"><i class="fa-solid fa-rose"></i>
-    </div>
-    <img src="img/logo1.PNG" /></a>
-    <div class="navbar__toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <ul class="navbar__menu">
-      <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
-      <li class="navbar__item"><a href="/gallery.html" class="navbar__links">Gallery</a></li>
-      <li class="navbar__item"><a href="/flowershop.html" class="navbar__links">Flower Shop</a></li>
-      <li class="navbar__item"><a href="/contactme.html" class="navbar__links">Contact</a></li>
-    </ul>
+      <a href="/" id="navbar__logo">
+        <i class="fa-solid fa-rose"></i>
+        <img src="img/logo1.PNG" />
+      </a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="/gallery.html" class="navbar__links">Gallery</a></li>
+        <li class="navbar__item"><a href="/flowershop.html" class="navbar__links">Flower Shop</a></li>
+        <li class="navbar__item"><a href="/contactme.html" class="navbar__links">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -40,92 +41,46 @@
         <h1>Contact Info</h1>
         <form id="contactForm">
           <div class="form-group">
-            <label for="E-mail">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="date">How did you hear about us?:</label>
+            <input type="text" id="date" name="date" required />
           </div>
           <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
           </div>
           <div class="form-group">
-            <label for="event">Event type & Location:</label>
-            <input type="text" id="event" name="event" required>
+            <label for="name">Full Name & Partner's Name:</label>
+            <input type="text" id="name" name="name" required />
           </div>
           <div class="form-group">
-            <label for="date">Date:</label>
-            <input type="text" id="date" name="date" required>
+            <label for="event">Event Type & Location/Venue Name:</label>
+            <input type="text" id="event" name="event" required />
           </div>
           <div class="form-group">
-            <label for="budget">Budget:</label>
-            <input type="text" id="budget" name="budget" required>
+            <label for="event-date">Event Date:</label>
+            <input type="text" id="event-date" name="event-date" required />
           </div>
           <div class="form-group">
-            <label for="floral-needs">Floral Needs:</label>
-            <textarea id="floral-needs" name="floral_needs" rows="2" required></textarea>
+            <label for="floral-needs">Floral Needs (please list desired items you are considering):</label>
+            <input type="text" id="floral-needs" name="floral-needs" required />
           </div>
-          <input type="submit" value="Submit">
+          <div class="form-group">
+            <label for="inspo-link">Inspo Link:</label>
+            <input type="text" id="inspo-link" name="inspo-link" required />
+          </div>
+          <div class="form-group">
+            <label for="budget">Floral Budget:</label>
+            <input type="text" id="budget" name="budget" required />
+          </div>
+          <div class="form-group">
+            <label for="special-notes">Any other special notes:</label>
+            <textarea id="special-notes" name="special-notes" rows="2" required></textarea>
+          </div>
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </div>
   </div>
-
-  <!-- Image Slideshow -->
-  <div class="main__img--container">
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 6</div>
-        <img src="img/AT5.JPG" style="width:60%">
-        <div class="text">Christine Ngoc Nguyen</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 6</div>
-        <img src="img/JennieJason.JPG" style="width:60%">
-        <div class="text">Courtney Yee Photography</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 6</div>
-        <img src="img/MElissa.JPG" style="width:60%">
-        <div class="text">Holly D Photos</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 6</div>
-        <img src="img/TIFFcityhall.JPG" style="width:60%">
-        <div class="text">Courtney Yee Photography</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 6</div>
-        <img src="img/AT9.JPG" style="width:60%">
-        <div class="text">Nelli Nguyen Photography</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 8</div>
-        <img src="img/KKdog.JPG" style="width:60%">
-        <div class="text">Christine Ngoc Nguyen</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">7 / 8</div>
-        <img src="img/RMchabot.JPG" style="width:60%">
-        <div class="text">Holly D Photography</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">8 / 8</div>
-        <img src="img/RMforest.JPG" style="width:60%">
-        <div class="text">Holly D Photography</div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-
 
   <!-- Footer Section -->
   <footer class="footer__container">
@@ -148,7 +103,9 @@
         <p class="website__rights">© Floralsbythuy 2024. All rights reserved</p>
         <div class="social__icons">
           <a class="social__icon--link" href="https://www.instagram.com/floralsbythuy/" target="_blank"
-            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
     </section>
